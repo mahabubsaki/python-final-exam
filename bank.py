@@ -7,11 +7,11 @@ class Bank:
         self.total_loan_amount = 0
         print(f'Bank is created with initial deposit of ${initial_balance}')
 
-    def create_account(self, user_name, initial_deposit):
+    def create_account(self, user_name,email,password, initial_deposit):
         if initial_deposit < 0:
             print("Initial deposit must be non-negative.")
             return
-        account = User(user_name,self, initial_deposit)
+        account = User(user_name,email,password,self, initial_deposit)
         self.accounts.append(account)
         return account
 

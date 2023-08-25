@@ -1,8 +1,10 @@
 from datetime import datetime
 class User:
-    def __init__(self, name,bank, deposite=0,):
+    def __init__(self, name,email,password,bank, deposite=0):
         self.name = name
         self.__balance = deposite
+        self.email = email
+        self.__password = password
         bank.add_balance(deposite)
         self.transaction_history = []
         print(f"Account created for {name} with an initial deposit of ${deposite}.")

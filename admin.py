@@ -1,7 +1,7 @@
 class Admin:
     @staticmethod
-    def create_account(bank, user_name, initial_deposit):
-       return bank.create_account(user_name, initial_deposit)
+    def create_account(bank, user_name,email,password, initial_deposit):
+       return bank.create_account(user_name,email,password, initial_deposit)
 
     @staticmethod
     def check_bank_balance(bank):

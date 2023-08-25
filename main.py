@@ -6,7 +6,7 @@ def main():
     #bank creation
     bank = Bank(10000,True)
     #normal account creation
-    user = User("Mahabub Saki",bank,5000)
+    user = User("Mahabub Saki","m@gmail.com","123",bank,5000)
     print(f'Banks Current balance before deposite is ${bank.check_bank_balance()}')
     #user is depositing on bank
     user.deposit(1000,bank)
@@ -18,7 +18,7 @@ def main():
     print(user.transaction_history)
     #account creation by account
     admin = Admin()
-    jack = admin.create_account(bank,"Jack",5000)
+    jack = admin.create_account(bank,"Jack","m@gmail.com","123",5000)
     print(f'Banks Current balance before deposite is ${bank.check_bank_balance()}')
     jack.deposit(5000,bank)
     print(f'Banks Current balance before withdraw and after deposite is ${bank.check_bank_balance()}')
@@ -36,7 +36,7 @@ def main():
     print(f'Jacks current balance after loan is ${jack.check_balance()}')
 
     
-    sparrow = admin.create_account(bank,"Sparrow",8000)
+    sparrow = admin.create_account(bank,"Sparrow","m@gmail.com","123",8000)
 
 
     print(f'Jacks current before transfer money ${jack.check_balance()}')

@@ -8,6 +8,7 @@ class User:
         bank.add_balance(deposite)
         self.transaction_history = []
         print(f"Account created for {name} with an initial deposit of ${deposite}.")
+        self.transaction_history.append(f"Account created for {name} with an initial deposit of ${deposite}.")
        
     def __repr__(self) -> str:
         return f'Account name {self.name} and current balance {self.__balance}'

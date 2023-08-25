@@ -60,6 +60,7 @@ class User:
                 return
             self.__balance += amount
             bank.total_loan_amount += amount
+            bank.bank_balance -= amount
             self.transaction_history.append(f"Requested and received a loan of ${amount}")
         else:
             print("Loan feature is currently disabled by the bank.")

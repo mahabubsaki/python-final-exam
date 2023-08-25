@@ -75,9 +75,9 @@ def main():
     #admin checking if bank is bankcrupt
     print(admin.check_is_bankrupt(bank))
 
-    #bank is not bankrupt as balance is 44000
+    #bank is not bankrupt as balance is 38000
 
-    bank.withdraw_balance(44000)
+    bank.withdraw_balance(38000)
 
     print(bank.check_bank_balance())
 
